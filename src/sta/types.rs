@@ -10,7 +10,7 @@ pub struct ScanResult {
     frequency: String,
     pub signal: isize,
     flags: String,
-    name: String,
+    pub name: String,
 }
 
 impl ScanResult {
@@ -59,8 +59,8 @@ impl ScanResult {
 
 #[derive(Serialize, Debug, Clone)]
 pub struct NetworkResult {
-    network_id: usize,
-    ssid: String,
+    pub network_id: usize,
+    pub ssid: String,
     flags: String,
 }
 
