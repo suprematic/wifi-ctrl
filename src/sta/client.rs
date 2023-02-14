@@ -126,7 +126,7 @@ impl RequestClient {
 }
 
 /// Broadcast events are unexpected, such as losing connection to the host network.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub enum Broadcast {
     Connected,
     Disconnected,
